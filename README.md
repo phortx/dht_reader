@@ -1,4 +1,4 @@
 dht_reader
 ==========
 
-Small tool to read a DHT-22 or 11 over the GPIO of the RPi. That's my bugfixed version of bzyx implementation.
+dht_reader.c is a small tool written in c, which reads a DHT-22 or 11 temperature sensor over the GPIO of the Raspberry Pi. That's my bugfixed version of [bzyx implementation](https://github.com/bzyx/pi-dht22).
