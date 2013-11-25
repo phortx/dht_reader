@@ -5,6 +5,6 @@ Contains a executable, which is compiled for ARM.
 
 
 ## Usage
-  ./dht_reader sensor pin
+    ./dht_reader sensor pin
 
 Where "sensor" is either 22 or 11 depending on your sensor (DHT-22 or DHT-11) and "pin" is the gpio pin to which you connected the sensor data pin.
