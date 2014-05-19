@@ -1,11 +1,14 @@
 // Orginal file from https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code
 
+// Usage:
+// ./dht_reader pin
+
 
 // Access from ARM Running Linux
 
+#define _BSD_SOURCE
 #define BCM2708_PERI_BASE        0x20000000
 #define GPIO_BASE                (BCM2708_PERI_BASE + 0x200000) /* GPIO controller */
-#define _BSD_SOURCE
 
 
 #include <stdio.h>
@@ -38,7 +41,7 @@ int main(int argc, char **argv)
         return 1;
 
   int type = DHT22;
-  int dhtpin = 25;
+  int dhtpin = atoi(argv[1]);
 
   printf("Using pin #%d\n", dhtpin);
   readDHT(type, dhtpin);
